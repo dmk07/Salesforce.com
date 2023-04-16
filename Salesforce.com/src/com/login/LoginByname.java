@@ -29,12 +29,13 @@ public void LaunchAUT()
 public void testLogin()
 {
 	
-	
-	driver.findElement(By.name("username")).sendKeys("dipak100kadam@gmail.com");
-	driver.findElement(By.name("pw")).sendKeys("dklajf");
-	driver.findElement(By.name("Login")).click();
 	driver.findElement(By.name("username")).clear();
 	driver.findElement(By.name("password")).clear();
+	driver.findElement(By.name("username")).sendKeys("dipak100kadam@gmail.com");
+	driver.findElement(By.name("pw")).sendKeys("dklajf");
+	
+	driver.findElement(By.name("Login")).click();
+	
 
 }
 

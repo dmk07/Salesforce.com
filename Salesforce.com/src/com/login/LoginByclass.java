@@ -33,8 +33,7 @@ public void testLogin()
 	driver.findElement(By.id("password")).clear();
 	driver.findElement(By.className("input r4 wide mb16 mt8 username")).sendKeys("dipak100kadam@gmail.com"); // class locator value alwasy changes
 	driver.findElement(By.className("input r4 wide mb16 mt8 password")).sendKeys("dklajf");
-	driver.findElement(By.id("username")).clear();
-	driver.findElement(By.id("password")).clear();
+	
 	driver.findElement(By.className("button r4 wide primary")).click();
 }
 
