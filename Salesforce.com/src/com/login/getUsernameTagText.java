@@ -1,11 +1,10 @@
 package com.login;
-//
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 
-public class LoginByname {
-	
+public class getUsernameTagText {
 	static {
 		//Dipak
 				System.setProperty("webdriver.edge.driver", "C://msedgedriver.exe");
@@ -24,29 +23,18 @@ public void LaunchAUT()
 	driver.manage().window().maximize();
 }
 
-//test login functionality
-
-public void testLogin()
-{	
-	driver.findElement(By.name("username")).clear();
-	driver.findElement(By.name("pw")).clear();
-	driver.findElement(By.name("username")).sendKeys("dipak100kadam@gmail.com");
-	driver.findElement(By.name("pw")).sendKeys("dklajf");
-	driver.findElement(By.name("Login")).click();
+public void getText()
+{
+		String str=driver.findElement(By.id("username")).getText();
+		System.out.println(str);
 }
 
+	public static void main(String[] args) {
+		
+		getUsernameTagText gettext=new getUsernameTagText();
+		gettext.LaunchAUT();
+		gettext.getText();
 
-
-public static void main(String[] args) {
-
-	
-	LoginByname test=new LoginByname();
-	test.LaunchAUT();
-	test.testLogin();
-	
-	
-	
-}
-	
+	}
 
 }
