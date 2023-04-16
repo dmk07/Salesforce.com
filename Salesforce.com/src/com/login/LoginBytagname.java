@@ -4,7 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 
-public class LoginByclass {
+public class LoginBytagname {
 	static {
 		//Dipak
 				System.setProperty("webdriver.edge.driver", "C://msedgedriver.exe");
@@ -29,11 +29,11 @@ public void testLogin()
 {
 	driver.findElement(By.id("username")).clear();
 	driver.findElement(By.id("password")).clear();
-	driver.findElement(By.className("input r4 wide mb16 mt8 username")).sendKeys("dipak100kadam@gmail.com"); // class locator value alwasy changes
-	driver.findElement(By.className("input r4 wide mb16 mt8 password")).sendKeys("dklajf");
-	driver.findElement(By.id("username")).clear();
-	driver.findElement(By.id("password")).clear();
-	driver.findElement(By.className("button r4 wide primary")).click();
+	
+//	driver.findElement(By.tagName("input")).sendKeys("dipak100kadam@gmail.com"); // class locator value alwasy changes
+////	driver.findElement(By.name("input r4 wide mb16 mt8 password")).sendKeys("dklajf");
+////	driver.findElement(By.name("button r4 wide primary")).click();
+//	driver.findElement(By.tagName("input")).clear();
 }
 
 
@@ -48,5 +48,4 @@ public static void main(String[] args) {
 	
 	
 }
-	
 }

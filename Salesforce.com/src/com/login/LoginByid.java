@@ -28,8 +28,12 @@ public class LoginByid {
 	
 	public void testLogin()
 	{
+	
+		driver.findElement(By.id("username")).clear();
+		driver.findElement(By.id("password")).clear();
 		driver.findElement(By.id("username")).sendKeys("dipak100kadam@gmail.com");
 		driver.findElement(By.id("password")).sendKeys("dklajf");
+	
 		driver.findElement(By.id("Login")).click();
 	}
 	
