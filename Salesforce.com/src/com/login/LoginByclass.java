@@ -27,6 +27,8 @@ public void LaunchAUT()
 
 public void testLogin()
 {
+	
+	// while using classname element please verity it should be fully string format. should not have any digit. becasue it will change everytime 
 	driver.findElement(By.id("username")).clear();
 	driver.findElement(By.id("password")).clear();
 	driver.findElement(By.className("input r4 wide mb16 mt8 username")).sendKeys("dipak100kadam@gmail.com"); // class locator value alwasy changes
