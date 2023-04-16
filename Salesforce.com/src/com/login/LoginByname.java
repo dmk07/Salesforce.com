@@ -43,7 +43,7 @@ public void testLogin()
 public static void main(String[] args) {
 
 	
-	LoginByid test=new LoginByid();
+	LoginByname test=new LoginByname();
 	test.LaunchAUT();
 	test.testLogin();
 	

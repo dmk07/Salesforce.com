@@ -30,10 +30,10 @@ public void testLogin()
 	driver.findElement(By.id("username")).clear();
 	driver.findElement(By.id("password")).clear();
 	
-//	driver.findElement(By.tagName("input")).sendKeys("dipak100kadam@gmail.com"); // class locator value alwasy changes
-////	driver.findElement(By.name("input r4 wide mb16 mt8 password")).sendKeys("dklajf");
-////	driver.findElement(By.name("button r4 wide primary")).click();
-//	driver.findElement(By.tagName("input")).clear();
+	driver.findElement(By.tagName("input")).sendKeys("dipak100kadam@gmail.com"); // class locator value alwasy changes
+	driver.findElement(By.name("input r4 wide mb16 mt8 password")).sendKeys("dklajf");
+	driver.findElement(By.name("button r4 wide primary")).click();
+	driver.findElement(By.tagName("input")).clear();
 }
 
 
@@ -41,7 +41,7 @@ public void testLogin()
 public static void main(String[] args) {
 
 	
-	LoginByid test=new LoginByid();
+	LoginBytagname test=new LoginBytagname();
 	test.LaunchAUT();
 	test.testLogin();
 	
