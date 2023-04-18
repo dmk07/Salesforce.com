@@ -30,16 +30,23 @@ public class clickCheckBox {
 	
 	public void clickCheckBoxByname() throws InterruptedException
 	{Thread.sleep(2000);
-		driver.findElement(By.id("rememberUn")).click();
+		driver.findElement(By.name("rememberUn")).click();
 	}
+	
+	public void clickCheckBoxBytype() throws InterruptedException
+	{Thread.sleep(2000);
+		driver.findElement(By.xpath("//input[@type='checkbox']")).click();
+	}
+	
+	
 	
 	public static void main(String[] args) throws InterruptedException {
 
 		clickCheckBox click=new clickCheckBox();
 		click.LaunchAUT();
 		click.clickCheckBoxByid();
-		
 		click.clickCheckBoxByname();
+		click.clickCheckBoxBytype();
 		
 		
 	}
