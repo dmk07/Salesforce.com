@@ -1,6 +1,7 @@
 package com.login;
 
 import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -38,9 +39,10 @@ public class ClickLinkText {
 	
 	driver.findElement(By.xpath("//label[text()='Male']")).click();
 	
-	WebElement dayelement = driver.findElement(By.id("day"));		
+	WebElement dayelement = driver.findElement(By.id("day"));
+	
 	Select daylistbox = new Select(dayelement);		
-	daylistbox.selectByIndex(21);
+	daylistbox.selectByIndex(19);
 		Thread.sleep(2000);
 	Select monthlistbox = new Select(driver.findElement(By.id("month")));  
 	monthlistbox.selectByVisibleText("April");
