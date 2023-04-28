@@ -28,17 +28,15 @@ public class LoginBytagname {
 //test login functionality
 
 	public void testTagName() {
-		
-		//driver.navigate().to("https://login.salesforce.com/?locale=in");
-		List<WebElement> web =driver.findElements(By.tagName("input"));
 
-		for(WebElement element:web) {
-			
-					System.out.println(element.getText());
+		// driver.navigate().to("https://login.salesforce.com/?locale=in");
+		List<WebElement> web = driver.findElements(By.tagName("input"));
+
+		for (WebElement element : web) {
+
+			System.out.println(element.getText());
 		}
 	}
-
-
 
 	public static void main(String[] args) {
 

@@ -7,7 +7,7 @@ import org.openqa.selenium.edge.EdgeDriver;
 public class LoginByxpath {
 
 	static {
-	
+
 		System.setProperty("webdriver.edge.driver", "C://msedgedriver.exe");
 		// dont create obj in static block you cant acess in local blcok
 
@@ -24,24 +24,21 @@ public class LoginByxpath {
 		Thread.sleep(2000);
 	}
 
-	public void testLoginByxpath() throws InterruptedException
-	{
+	public void testLoginByxpath() throws InterruptedException {
 		driver.findElement(By.xpath("//input[@id='username']"));
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("//input[@id='password']"));
 		Thread.sleep(2000);
-		driver.findElement(By.xpath("//input[@id='Login']")).click();		
-		
+		driver.findElement(By.xpath("//input[@id='Login']")).click();
+
 	}
-	
+
 	public static void main(String[] args) throws InterruptedException {
 
-		LoginByxpath test=new LoginByxpath();
+		LoginByxpath test = new LoginByxpath();
 		test.LaunchAUT();
 		test.testLoginByxpath();
-		
-		
-		
+
 	}
 
 }
